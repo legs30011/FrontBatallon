@@ -1,0 +1,97 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+
+.table .thead {
+  background-color: #333;
+  color: #fff;
+}
+
+.table .th,
+.table .td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.table .tr:nth-child(even) {
+  background-color: #41644A;
+}
+
+.table .th {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.table .td {
+  font-size: 14px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.title {
+  margin-left: 10px;
+}
+
+/* Mobile responsive styles */
+@media only screen and (max-width: 600px) {
+  .table,
+  .table .thead,
+  .table .tbody,
+  .table .th,
+  .table .td,
+  .table .tr {
+    display: block;
+  }
+
+  .table .thead .tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table .tr {
+    border: 1px solid #41644A;
+  }
+
+  .table .td {
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .table .td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .table .td:nth-of-type(1):before {
+    content: "Nombre";
+  }
+
+  .table .td:nth-of-type(2):before {
+    content: "Rango";
+  }
+
+  .table .td:nth-of-type(3):before {
+    content: "Celular";
+  }
+
+  .table .td:nth-of-type(4):before {
+    content: "Status";
+  }
+
+  .table .td:nth-of-type(5):before {
+    content: "Descripción";
+  }
+}

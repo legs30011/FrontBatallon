@@ -1,0 +1,106 @@
+body{
+    font-family: Helvetica;
+    background: rgb(0, 0, 0);
+    display: flex;
+}
+
+.h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 30px 0;
+}
+
+/* Table Styles */
+.table-wrapper {
+    overflow-x: auto;
+    max-height: 80vh; /* Altura máxima de la tabla */
+    overflow-y: scroll; /* Agregar scroll hacia abajo */
+}
+
+.table{
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    font-family: Helvetica;
+    width: 100%;
+    max-width: 100%;
+   
+    background-color: #0f1310;
+}
+
+.table .td, .table .th {
+    text-align: center;
+    padding: 8px;
+}
+
+.table .td {
+    border-right: 1px solid #0e0c0c;
+    font-size: 12px;
+}
+
+.table .thead .th {
+    color: #000000;
+    background: #F2E3DB;
+}
+
+.table .thead .th:nth-child(odd) {
+    color: #000000;
+    background: #698f66;
+}
+
+.table .tr:nth-child(even) {
+    background: #263A29;
+}
+
+.table .tr:nth-child(odd) {
+    background: #263A29;
+}
+
+@media screen and (max-width: 800px) {
+    /* Cambia el tamaño de la fuente y el padding de la tabla */
+    .table {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    /* Oculta la primera columna de la tabla */
+    .table .td:nth-child(1),
+    .table .th:nth-child(1) {
+        width:auto;
+    }
+
+    /* Establece el ancho de la primera fila de la tabla */
+    .table .td:nth-child(2),
+    .table .th:nth-child(2) {
+        width: auto;
+    }
+
+    /* Establece el ancho de la segunda fila de la tabla */
+    .table .td:nth-child(3),
+    .table .th:nth-child(3) {
+        width: auto;
+    }
+
+    /* Establece el ancho de la tercera fila de la tabla */
+    .table .td:nth-child(4),
+    .table .th:nth-child(4) {
+        width: auto;
+    }
+
+    /* Establece el ancho de la cuarta fila de la tabla */
+    .table .td:nth-child(5),
+    .table .th:nth-child(5) {
+        width: auto;
+    }
+
+    /* Establece el ancho de la quinta fila de la tabla */
+    .table .td:nth-child(6),
+    .table .th:nth-child(6) {
+        width: auto;
+    }
+}

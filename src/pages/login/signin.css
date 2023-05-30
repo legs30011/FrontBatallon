@@ -1,0 +1,112 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Colores */
+:root {
+  --color-primary: #428cff;
+  --color-secondary: #ff9f42;
+  --color-tertiary: #42ff6e;
+  --color-light: #f5f5f5;
+  --color-text: #333333;
+}
+
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos del header */
+.ion-header {
+  background: linear-gradient(to right, #156089, #428cff);
+  color: white;
+  text-align: center;
+  padding: 1rem; 
+}
+
+.ion-header img {
+  height: 100px;
+}
+
+.ion-header .ion-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.ion-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+/* Estilos del contenido */
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--color-text);
+}
+
+.form1 {
+  width: 100%;
+  max-width: 30rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.title1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.input1 {
+  margin-bottom: 2rem;
+  border: 0.5px solid var(--color-primary);
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.button1 {
+  background: var(--color-primary);
+  color: white;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.button1:hover {
+  background-color: var(--color-primary);
+}
+
+/* Estilos del footer */
+ion-footer {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+  .container1 {
+    padding: 1rem;
+  }
+  
+  .form1 {
+    max-width: 100%;
+  }
+}

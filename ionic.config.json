@@ -1,0 +1,7 @@
+{
+  "name": "BatallonProyecto2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

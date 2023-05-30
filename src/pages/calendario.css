@@ -1,0 +1,80 @@
+/* Estilos generales */
+.ion-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilos del encabezado */
+  .ion-header {
+    background-color: #428cff;
+    color: #ffffff;
+  }
+  
+  .ion-toolbar {
+    padding: 0.5rem;
+  }
+  
+  .ion-buttons {
+    align-items: center;
+  }
+  
+  /* Estilos del título */
+  .ion-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 1rem;
+  }
+  
+  /* Estilos del contenido */
+  .ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos del selector de fecha y hora */
+  .ion-datetime {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* Estilos del texto del selector de fecha y hora */
+  .ion-datetime .span[slot="time-label"] {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Estilos de la barra de pestañas */
+  .tab-bar {
+    background-color: #ffffff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .tab-bar .ion-button {
+    color: #428cff;
+  }
+  
+  .tab-bar .ion-button[aria-selected="true"] {
+    font-weight: bold;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 480px) {
+    .ion-title {
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+    }
+  
+    .ion-datetime {
+      padding: 0.5rem;
+    }
+  }
+  

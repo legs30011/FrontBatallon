@@ -1,0 +1,40 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido {
+  padding-top: 100px;
+  display: block;
+}
+
+.contenido_opcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes desplazarBoton {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.contenido_opcion:hover {
+  background-color: #ffcc33;
+  animation: desplazarBoton 0.3s forwards;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+}
